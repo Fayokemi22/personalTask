@@ -1,3 +1,6 @@
+from unittest import TestCase
+
+
 def substract(a, b):
     if b==0:
         raise ValueError("cannot be divided by zero")
@@ -8,3 +11,6 @@ def divide(a, b):
 
 def multiply(a, b):
     return a * b
+
+def average(a, b):
+    return (a + b) / 2

@@ -1,5 +1,5 @@
 from unittest import TestCase
-from operations.substraction import divide, substract, multiply
+from operations.substraction import divide, substract, multiply, average
 
 
 class Test(TestCase):
@@ -20,5 +20,11 @@ class Test(TestCase):
         b = 3
         result = multiply(a, b)
         self.assertEqual(result, 27)
+
+    def test_for_average(self):
+        a = 9
+        b = 3
+        result = average(a, b)
+        self.assertEqual(result, 6)
 
 
