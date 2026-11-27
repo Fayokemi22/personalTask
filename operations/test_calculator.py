@@ -8,10 +8,10 @@ class TestCalculator(TestCase):
         self.calc = Calculator()
 
     def test_add(self):
-        a = 12
-        b = 4
-        result = self.calc.add(a, b)
-        self.assertEqual(result, 16)
+        # a = 12
+        # b = 4
+        # result = self.calc.add(a, b)
+        self.assertEqual(16,self.calc.add(12, 4))
 
     def test_subtract(self):
         self.assertEqual(self.calc.subtract(6, 2), 4)
